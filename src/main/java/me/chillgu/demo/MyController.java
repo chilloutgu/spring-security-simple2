@@ -2,6 +2,7 @@ package me.chillgu.demo;
 
 import java.util.List;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,6 +14,7 @@ import me.chillgu.demo.user.UserRepository;
 @RestController
 @RequestMapping("api/public")
 @RequiredArgsConstructor
+@CrossOrigin
 public class MyController {
 	
 	private final UserRepository userRepository;
